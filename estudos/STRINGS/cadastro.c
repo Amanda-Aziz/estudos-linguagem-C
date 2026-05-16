@@ -1,3 +1,24 @@
+/******************************************************************************
+ * DESCRIÇÃO: 
+ * Sistema de gerenciamento e cadastro de alunos.
+ * 
+ * FUNCIONAMENTO:
+ * 1. Menu: Permite navegar entre cadastro, listagem, busca ou encerrar.
+ * 2. Cadastro: Registra nome, gênero, idade, peso e altura sem duplicatas.
+ * 3. Busca: Localiza o índice do aluno no vetor através do nome informado.
+ * 4. Exibição: Lista todos os nomes ou detalha a ficha técnica de um aluno.
+ * 
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Estrutura Struct: Tipo personalizado Aluno para agrupar dados correlacionados.
+ * - Manipulação de Strings: Uso de strcmp, strcpy e strcspn para tratar textos.
+ * - Passagem por Referência: Uso de ponteiro (*n) para atualizar o total de alunos.
+ * - Limpeza de Buffer: Uso de loop com getchar() para evitar falhas no scanf/fgets.
+ * - Definição de Constantes: Uso de #define para limites do vetor e dos nomes.
+ * 
+ * Autor/User: Amanda-Aziz
+ * Data: 16 de Maio de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #define TAM 100
