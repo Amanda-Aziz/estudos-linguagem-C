@@ -1,3 +1,24 @@
+/******************************************************************************
+ * DESCRIÇÃO: 
+ * Implementação do algoritmo Bubble Sort para ordenação de vetores inteiros.
+ * 
+ * FUNCIONAMENTO:
+ * 1. Preenchimento: Solicita ao usuário 10 números inteiros.
+ * 2. Ordenação: Organiza os elementos em ordem crescente usando Bubble Sort.
+ * 3. Troca de Valores: Compara posições adjacentes e realiza trocas quando necessário.
+ * 4. Exibição: Mostra o vetor já ordenado na tela.
+ * 
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Algoritmo Bubble Sort: Método de ordenação baseado em comparações sucessivas.
+ * - Vetores: Armazenamento e manipulação de números inteiros.
+ * - Ponteiros: Uso de ponteiros para acessar e modificar posições do vetor.
+ * - Estruturas de Repetição: Uso de for e do-while para percorrer e ordenar dados.
+ * - Otimização Simples: Controle de trocas e redução do limite de comparação.
+ * 
+ * Autor/User: Amanda-Aziz
+ * Data: 25 de Maio de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 
 void bubblesort(int* v, int n) {
