@@ -16,8 +16,8 @@ Atualmente estou focando em dominar a base da linguagem e manipulação de dados
 - [x] **Condicionais:** `if`, `else`, `switch case`.
 - [x] **Loops:** `for`, `while`, `do-while`.
 - [x] **Strings:** Manipulação de textos e funções da biblioteca `<string.h>`.
-- [ ] **Ponteiros:** Gerenciamento de memória e endereços.
-- [ ] **Alocação Dinâmica:** `malloc`, `free` e estruturas complexas.
+- [x] **Ponteiros:** Gerenciamento de memória e endereços.
+- [x] **Alocação Dinâmica:** `malloc`, `free` e estruturas complexas.
 
 ---
 
