@@ -28,7 +28,6 @@ void procurar(int vetor[][C], int numero_procurado, int matriz_zerada[][C]){
     for(i = 0; i < L; i++){
         for(j = 0; j < C; j++) {
             if(vetor[i][j] == numero_procurado){
-                //oq?
                 matriz_zerada[i][j] = 1; // Altera a matriz que veio por parâmetro
             }
         }
