@@ -68,7 +68,7 @@ int main(){
     int dias_acima;
     float maior, menor;
     
-    preencher(chuvas);                          //a
+    preencher(chuvas);                                  //a
     media = calcularMEDIA(chuvas);                      //b
     dias_acima = diasACIMAdaMedia(chuvas, media);      //c
     menor = menorREGISTRO(chuvas);                    //d
