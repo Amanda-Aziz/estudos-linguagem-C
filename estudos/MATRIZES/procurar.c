@@ -34,25 +34,34 @@ void procurar(int vetor[][C], int numero_procurado, int matriz_zerada[][C]){
     }
 }
 
-void exibirZerada(int matZeros[][C], int matOriginal[][C]){
+void exibirZerada(int matZeros[][C], int matOriginal[][C], int numero_procurado){
     int i, j;
     int contador = 0;
-    
+
     printf("\n============== MATRIZ FILTRADA ==============\n");
     for(i = 0; i < L; i++){
         for(j = 0; j < C; j++) {
-            // Se na matriz de mapeamento tiver 1, mostra o número original
             if(matZeros[i][j] == 1) {
                 printf("%2d ", matOriginal[i][j]);
-                contador++; // Continua contando as vezes que apareceu
-            } else { // Se não tiver, desenha o zero na tela
+            } else { 
                 printf(" 0 ");
             }
         }
-        printf("\n"); // Quebra a linha no final de cada fileira
+        printf("\n"); 
     }
     printf("=============================================\n");
-    printf("\nO valor foi encontrado um total de %d vezes na matriz.\n", contador);
+    
+    //listagem de coordenadas idêntica ao modelo da imagem
+    printf("\nPosições onde o valor %d foi encontrado:\n", numero_procurado);
+    for(i = 0; i < L; i++){
+        for(j = 0; j < C; j++) {
+            if(matZeros[i][j] == 1) {
+                printf("%d,%d\n", i, j); // Formato linha,coluna da foto
+                contador++; 
+            }
+        }
+    }
+    printf("O valor procurado aparece %d vezes na matriz.\n", contador);
 }
 
 
@@ -69,11 +78,9 @@ int main(){
     printf("\nDigite um valor (1 a 10): ");
     scanf("%d", &valor_procurar);
     
-    //Passando os 3 argumentos para a função
     procurar(A, valor_procurar, A_zerada);
     
-    // Passando dois parâmetros obrigatórios
-    exibirZerada(A_zerada, A);
+    exibirZerada(A_zerada, A, valor_procurar);
     
     return 0;
 }
