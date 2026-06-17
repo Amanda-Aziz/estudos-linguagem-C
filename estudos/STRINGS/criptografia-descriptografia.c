@@ -19,7 +19,6 @@
  * Data: 26 de Abril de 2026
  *******************************************************************************/
 
-
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h> 
@@ -27,6 +26,8 @@
 #define TAM 81
 
 void criptografar(char fr[]){
+    
+// (...; enquanto a letra atual (fr[i]) NÃO FOR o fim da frase; ...)
     for(int i = 0; fr[i] != '\0'; i++){
         char car = tolower(fr[i]);
         switch(car){
@@ -41,7 +42,7 @@ void criptografar(char fr[]){
 
 void descriptografar(char fr[]) {
     for (int i = 0; fr[i] != '\0'; i++) {
-        if (fr[i] == '@') fr[i] = 'a';
+             if (fr[i] == '@') fr[i] = 'a';
         else if (fr[i] == '$') fr[i] = 'e';
         else if (fr[i] == '&') fr[i] = 'i';
         else if (fr[i] == '#') fr[i] = 'o';
@@ -51,6 +52,7 @@ void descriptografar(char fr[]) {
 
 void limparString(char st[]){
     int qtd = strlen(st);
+// garante que a string não está totalmente vazia, ...
     if (qtd > 0 && st[qtd-1] == '\n') {
         st[qtd-1] = '\0';
     }
@@ -58,30 +60,28 @@ void limparString(char st[]){
 
 int main(){
     char frase[TAM];
-    char entradaOpcao[10];
-    int opcao;
+    char opcao;
+    
     printf("===================================================\n");
-    printf("1 - Criptografar\n2 - Descriptografar\nOpção: ");
-    fgets(entradaOpcao, 10, stdin);
-    opcao = atoi(entradaOpcao); 
-    printf("\n===================================================\n");
+    printf("1 - Criptografar\n2 - Descriptografar");
+    printf("\nOpção: ");
+    scanf("%c", &opcao);
+    getchar();
+    
     printf("Digite a frase: ");
     fgets(frase, TAM, stdin);
+    
     limparString(frase); 
 
-    if(opcao == 1) {
+    if(opcao == '1') { 
         criptografar(frase);
         printf("Resultado: %s\n", frase);
-        printf("\n===================================================\n");
-    } else if(opcao == 2) {
+    } else if(opcao == '2') {
         descriptografar(frase);
         printf("Resultado: %s\n", frase);
-        printf("\n===================================================\n");
     } else {
         printf("Opcao invalida! Digite novamente a opção...\n");
-        printf("===================================================\n");
     }
 
     return 0;
 }
-
