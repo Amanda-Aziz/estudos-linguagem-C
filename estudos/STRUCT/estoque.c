@@ -1,3 +1,37 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Sistema de controle de estoque que realiza o cadastro de produtos e
+ * identifica aqueles cuja quantidade disponível está abaixo do limite mínimo
+ * permitido para reposição.
+ *
+ * FUNCIONAMENTO:
+ * 1. Cadastro: O usuário informa os dados de cada produto, incluindo código,
+ *    descrição, fornecedor, quantidade mínima e quantidade em estoque.
+ * 2. Armazenamento: As informações são registradas em um vetor de estruturas.
+ * 3. Análise: O programa compara a quantidade real de cada produto com sua
+ *    quantidade mínima permitida.
+ * 4. Identificação: Os produtos com estoque abaixo do mínimo são selecionados.
+ * 5. Saída: Exibe um relatório contendo os produtos que necessitam de reposição.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Structs: Utilização da estrutura Produto para agrupar informações de cada
+ *   item do estoque.
+ * - Constante: Definição da quantidade máxima de produtos através da diretiva
+ *   #define TAM 500.
+ * - Vetor de Estruturas: Armazenamento dos registros dos produtos em um array.
+ * - Modularização: Separação da lógica em funções de cadastro e pesquisa.
+ * - Manipulação de Strings: Uso de fgets() para leitura de textos e strcspn()
+ *   para remoção do caractere de quebra de linha.
+ * - Estruturas Condicionais: Verificação de produtos com estoque abaixo do
+ *   limite mínimo estabelecido.
+ * - Controle de Estoque: Comparação entre quantidade real e quantidade mínima.
+ * - Variável Auxiliar: Utilização de um indicador para informar quando não há
+ *   produtos com necessidade de reposição.
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #define TAM 500
