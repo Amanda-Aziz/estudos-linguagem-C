@@ -1,3 +1,40 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Sistema de análise de matrizes quadradas que verifica se uma matriz de
+ * ordem 4 é simétrica, comparando seus elementos em relação à diagonal
+ * principal.
+ *
+ * FUNCIONAMENTO:
+ * 1. Entrada: O usuário informa os valores de todos os elementos da matriz.
+ * 2. Armazenamento: Os dados são registrados em uma matriz quadrada de ordem 4.
+ * 3. Exibição: O programa apresenta a matriz preenchida na tela.
+ * 4. Verificação: Cada elemento da posição [i][j] é comparado com o elemento
+ *    correspondente da posição [j][i].
+ * 5. Análise: Caso todos os pares comparados sejam iguais, a matriz é
+ *    considerada simétrica.
+ * 6. Saída: O sistema informa se a matriz é ou não simétrica.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Constante: Definição da ordem da matriz através da diretiva
+ *   #define ORDEM 4.
+ * - Matrizes: Utilização de um array bidimensional para armazenamento dos
+ *   elementos.
+ * - Modularização: Separação da lógica em funções de preenchimento, exibição
+ *   e verificação.
+ * - Estruturas de Repetição: Uso de laços for aninhados para percorrer a
+ *   matriz.
+ * - Estruturas Condicionais: Aplicação de if para verificar a condição de
+ *   simetria.
+ * - Comparação de Dados: Verificação da igualdade entre elementos simétricos.
+ * - Conceito de Matriz Simétrica: Análise da relação entre os elementos
+ *   a[i][j] e a[j][i].
+ * - Retorno de Funções: Uso de valores inteiros para indicar verdadeiro (1)
+ *   ou falso (0).
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #define ORDEM 4
 
