@@ -1,3 +1,31 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Sistema de monitoramento pluviométrico que registra a quantidade de chuva
+ * ocorrida durante 30 dias e gera um relatório estatístico do período.
+ *
+ * FUNCIONAMENTO:
+ * 1. Coleta: O usuário informa a quantidade de chuva registrada em cada um
+ *    dos 30 dias do mês.
+ * 2. Processamento: O programa calcula a média diária de chuvas.
+ * 3. Análise: Identifica quantos dias tiveram chuva acima da média mensal.
+ * 4. Verificação: Determina o menor e o maior registro de chuva do período.
+ * 5. Saída: Exibe um relatório completo com os resultados obtidos.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Constante: Definição do tamanho do vetor através da diretiva #define TAM 30.
+ * - Vetores: Armazenamento dos registros diários de chuva em um array de reais.
+ * - Modularização: Divisão da lógica em 5 funções específicas para cada tarefa.
+ * - Estruturas de Repetição: Uso de laços for para percorrer os registros.
+ * - Cálculo Estatístico: Determinação da média aritmética dos valores.
+ * - Contagem Condicional: Verificação dos dias com chuva acima da média.
+ * - Busca de Extremos: Identificação do menor e do maior valor registrado.
+ * - Manipulação de Dados Reais: Utilização do tipo float para representar
+ *   quantidades de chuva em milímetros (mm).
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #define TAM 30
 
