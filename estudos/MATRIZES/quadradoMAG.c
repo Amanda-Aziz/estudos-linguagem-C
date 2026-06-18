@@ -1,3 +1,42 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Sistema de verificação de quadrado mágico que analisa uma matriz quadrada
+ * de ordem 10 e determina se a soma de todas as linhas, colunas e diagonais
+ * principais é igual.
+ *
+ * FUNCIONAMENTO:
+ * 1. Entrada: O usuário informa os valores de todos os elementos da matriz.
+ * 2. Armazenamento: Os dados são registrados em uma matriz quadrada 10x10.
+ * 3. Exibição: A matriz preenchida é apresentada na tela.
+ * 4. Referência: O programa calcula a soma da primeira linha para servir como
+ *    valor de comparação.
+ * 5. Verificação: São calculadas as somas de todas as linhas, colunas e das
+ *    duas diagonais da matriz.
+ * 6. Saída: O sistema informa se a matriz representa ou não um quadrado
+ *    mágico.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Constante: Definição da ordem da matriz através da diretiva
+ *   #define ORDEM 10.
+ * - Matrizes: Utilização de um array bidimensional para armazenamento dos
+ *   elementos.
+ * - Modularização: Separação das tarefas em funções de preenchimento,
+ *   exibição e verificação.
+ * - Estruturas de Repetição: Uso de laços for aninhados para percorrer a
+ *   matriz.
+ * - Estruturas Condicionais: Aplicação de if para validar as somas.
+ * - Comparação de Dados: Verificação da igualdade entre linhas, colunas e
+ *   diagonais.
+ * - Diagonal Principal: Soma dos elementos das posições [i][i].
+ * - Diagonal Secundária: Soma dos elementos das posições
+ *   [i][ORDEM - 1 - i].
+ * - Retorno Lógico: Utilização dos valores 1 (verdadeiro) e 0 (falso) para
+ *   indicar se a matriz é um quadrado mágico.
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #define ORDEM 10
 
