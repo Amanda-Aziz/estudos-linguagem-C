@@ -19,7 +19,7 @@
  *   controle do buffer de entrada.
  *
  * Autor/User: Amanda-Aziz
- * Data: Junho de 2026
+ * Data: 18 de Junho de 2026
  *******************************************************************************/
 
 #include <stdio.h>
