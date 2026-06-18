@@ -1,3 +1,39 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Sistema de gerenciamento de produtos que permite cadastrar, visualizar e
+ * buscar produtos por código através de um menu interativo.
+ *
+ * FUNCIONAMENTO:
+ * 1. Cadastro: O usuário informa nome, código e preço de cada produto.
+ * 2. Armazenamento: Os dados são guardados em um vetor de estruturas.
+ * 3. Consulta: O sistema permite exibir todos os produtos cadastrados.
+ * 4. Pesquisa: O usuário pode informar um código para localizar um produto
+ *    específico.
+ * 5. Saída: As informações dos produtos são exibidas conforme a opção
+ *    selecionada no menu principal.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Structs: Utilização da estrutura Produto para agrupar os dados de cada
+ *   produto.
+ * - Constantes: Definição dos limites de produtos e tamanho dos nomes através
+ *   das diretivas #define TAM e #define TAM_NOME.
+ * - Vetor de Estruturas: Armazenamento dos produtos em um array de registros.
+ * - Modularização: Separação das funcionalidades em funções de cadastro,
+ *   exibição e busca.
+ * - Manipulação de Strings: Uso de fgets() para leitura de nomes e strcspn()
+ *   para remoção do caractere de quebra de linha.
+ * - Estruturas de Repetição: Utilização de laços for e do...while para
+ *   percorrer os dados e controlar o menu.
+ * - Estruturas Condicionais: Uso de if e switch/case para validação e controle
+ *   das operações.
+ * - Busca Sequencial: Pesquisa de produtos por código percorrendo o vetor.
+ * - Menus Interativos: Interface textual para navegação entre as opções do
+ *   sistema.
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 
