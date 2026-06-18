@@ -1,3 +1,44 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Sistema de busca em matrizes que gera uma matriz preenchida com números
+ * aleatórios, procura um valor informado pelo usuário e exibe apenas as
+ * posições onde esse valor foi encontrado.
+ *
+ * FUNCIONAMENTO:
+ * 1. Geração: O programa cria uma matriz 10x15 preenchida com números
+ *    aleatórios entre 1 e 10.
+ * 2. Exibição: A matriz original é apresentada na tela.
+ * 3. Pesquisa: O usuário informa um valor que deseja localizar.
+ * 4. Processamento: O sistema percorre toda a matriz procurando ocorrências
+ *    do número informado.
+ * 5. Marcação: Uma segunda matriz registra com o valor 1 as posições onde o
+ *    número foi encontrado.
+ * 6. Saída: O programa exibe uma matriz filtrada, mostra as coordenadas das
+ *    ocorrências e informa a quantidade total de vezes que o valor aparece.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Constantes: Definição do número de linhas e colunas através das diretivas
+ *   #define L 10 e #define C 15.
+ * - Matrizes: Utilização de matrizes bidimensionais para armazenamento dos
+ *   dados originais e das marcações de busca.
+ * - Geração Aleatória: Uso das funções rand(), srand() e time() para criar
+ *   valores aleatórios.
+ * - Modularização: Separação da lógica em funções de preenchimento, exibição,
+ *   pesquisa e relatório.
+ * - Estruturas de Repetição: Aplicação de laços for aninhados para percorrer
+ *   as matrizes.
+ * - Estruturas Condicionais: Uso de if para identificar ocorrências do valor
+ *   procurado.
+ * - Busca Sequencial: Verificação de todos os elementos da matriz.
+ * - Matrizes Auxiliares: Utilização de uma segunda matriz para registrar as
+ *   posições encontradas.
+ * - Contadores: Registro da quantidade total de ocorrências do número
+ *   pesquisado.
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h> //Contém as funções rand() e srand()
 #include <time.h>   //Contém a função time()
