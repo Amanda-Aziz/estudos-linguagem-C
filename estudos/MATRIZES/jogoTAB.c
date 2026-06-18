@@ -1,3 +1,43 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Jogo de exploração em matriz no qual o jogador deve encontrar motos
+ * escondidas enquanto evita bombas. O objetivo é localizar todas as motos
+ * antes que as chances ou vidas se esgotem.
+ *
+ * FUNCIONAMENTO:
+ * 1. Inicialização: O programa gera uma matriz 10x10 preenchida com valores
+ *    aleatórios representando posições vazias, bombas e motos.
+ * 2. Menu: O usuário escolhe entre iniciar uma partida ou encerrar o programa.
+ * 3. Jogabilidade: O jogador informa coordenadas de linha e coluna para
+ *    explorar posições da matriz.
+ * 4. Verificação: O sistema identifica se a posição contém uma moto, uma
+ *    bomba ou está vazia.
+ * 5. Atualização: As chances, vidas e quantidade de motos encontradas são
+ *    atualizadas a cada jogada.
+ * 6. Encerramento: O jogo termina quando todas as motos são encontradas,
+ *    quando as vidas chegam a zero ou quando acabam as chances disponíveis.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Constante: Definição da ordem da matriz através da diretiva
+ *   #define ORDEM 10.
+ * - Matrizes: Utilização de uma matriz bidimensional para representar o
+ *   campo de jogo.
+ * - Geração Aleatória: Uso das funções rand(), srand() e time() para criar
+ *   posições aleatórias.
+ * - Modularização: Separação da lógica em funções de preenchimento e
+ *   execução da partida.
+ * - Estruturas de Repetição: Aplicação de laços for e do...while.
+ * - Estruturas Condicionais: Uso de if/else e switch/case para controlar
+ *   eventos e opções do sistema.
+ * - Validação de Entrada: Verificação de coordenadas dentro dos limites da
+ *   matriz.
+ * - Controle de Jogo: Gerenciamento de vidas, chances e objetivos.
+ * - Menu Interativo: Interface textual para iniciar ou encerrar partidas.
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #define ORDEM 10
 
