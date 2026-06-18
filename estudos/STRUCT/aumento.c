@@ -1,3 +1,38 @@
+/******************************************************************************
+ * DESCRIÇÃO:
+ * Sistema de cadastro e atualização salarial de funcionários, permitindo o
+ * registro de dados pessoais e profissionais, além da aplicação automática
+ * de aumento salarial para colaboradores que atendam a critérios específicos.
+ *
+ * FUNCIONAMENTO:
+ * 1. Cadastro: O usuário informa os dados de cada funcionário, incluindo
+ *    nome, matrícula, escolaridade, tempo de serviço e salário.
+ * 2. Armazenamento: Os dados são guardados em um vetor de estruturas.
+ * 3. Análise: O programa verifica quais funcionários atendem aos critérios
+ *    para receber aumento salarial.
+ * 4. Processamento: Funcionários com escolaridade nível 3, mais de 5 anos de
+ *    serviço e salário inferior a R$ 1000,00 recebem aumento de 20%.
+ * 5. Saída: Exibe os dados dos funcionários contemplados e seus novos salários.
+ *
+ * O QUE CONTÉM NESTE CÓDIGO:
+ * - Structs: Utilização da estrutura Funcionario para agrupar informações
+ *   relacionadas a cada colaborador.
+ * - Constante: Definição da quantidade de funcionários através da diretiva
+ *   #define TAM.
+ * - Vetor de Estruturas: Armazenamento dos cadastros em um array de registros.
+ * - Modularização: Divisão da lógica em funções para cadastro e atualização
+ *   salarial.
+ * - Manipulação de Strings: Uso de fgets() para leitura de textos e strcspn()
+ *   para remoção do caractere de quebra de linha.
+ * - Estruturas Condicionais: Aplicação de critérios para concessão de aumento.
+ * - Operações Aritméticas: Cálculo do reajuste salarial de 20%.
+ * - Entrada de Dados: Leitura de informações numéricas e textuais fornecidas
+ *   pelo usuário.
+ *
+ * Autor/User: Amanda-Aziz
+ * Data: 18 de Junho de 2026
+ *******************************************************************************/
+
 #include <stdio.h>
 #include <string.h>
 #define TAM 2 // Altere para 50
